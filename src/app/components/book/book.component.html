@@ -1,0 +1,12 @@
+
+<div class="main-content">
+  <h1 class="display-4">Books</h1>
+  <hr>
+  <app-book-list
+    *ngFor="let book of books"
+    [book]="book"
+    (deleteBook)="deleteBook($event)"
+    (editBook)="editBook($event)"
+  >
+  </app-book-list>
+</div>

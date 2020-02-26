@@ -1,0 +1,10 @@
+<div class="card card-body mt-1 bg bg-light">
+    <h3>{{ book.title }} <Span class="side"><a routerLink="/edit_book" (click)="onEdit(book)" id="edit"><i class="fa fa-pencil" aria-hidden="true"></i></a> <i id="delete" (click)="onDelete(book)" class="fa fa-trash" aria-hidden="true"></i></Span>
+    </h3>
+    <ul class="list-group">
+        <li class="list-group-item"> Author: {{ book.author }}</li>
+        <li class="list-group-item"> Category: {{ book.category }} </li>
+    </ul>
+</div>
+
+

@@ -1,0 +1,31 @@
+<div class="add-book-container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card card-body">
+                <h2>Add Book</h2>
+                <hr>
+                <form ngNativeValidate (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label for="book-title">Title</label>
+                        <input type="text" name="book-title" id="book-title" [(ngModel)]="book_title" placeholder="Title" class="form-control" required>
+                        <small class="form-text text-muted">Enter Book Title. E.g. Two States</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-title">Author</label>
+                        <input [(ngModel)]="book_author" type="text" name="book-author" id="book-author" placeholder="Author" class="form-control" required>
+                        <small class="form-text text-muted">Enter Author Name. E.g. Chetan Bhagat</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-title">Category</label>
+                        <input [(ngModel)]="book_category" type="text" name="book-category" id="book-category" placeholder="Category" class="form-control" required>
+                        <small class="form-text text-muted">Enter Category. E.g. Fiction, Technology, Arts etc.</small>
+                    </div>
+                    <button type="submit" class="btn btn-outline-dark btn-block">Add</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6 side-cover">
+            <img src="assets/img/cov-img.jpg" alt="cover">
+        </div>
+    </div>
+</div>

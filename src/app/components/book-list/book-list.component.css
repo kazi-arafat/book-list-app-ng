@@ -1,0 +1,16 @@
+
+.side{
+    float: right;
+}
+
+#delete{
+    text-decoration: none;
+    color: #cf3325;
+    cursor: pointer;
+}
+
+#edit{
+    text-decoration: none;
+    color: #CD8223;
+    cursor: pointer;
+}
